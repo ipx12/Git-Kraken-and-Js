@@ -1,2 +1,2 @@
 # Git-Kraken-and-Js
-fsdf
+Lerning some JS
