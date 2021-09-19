@@ -71,7 +71,45 @@ function writeYourGenres() {
 writeYourGenres();
 
 
+const options = {
+    name: 'test',
+    with: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log(Object.keys(this).length);
+    }
+};
+
+// console.log(Object.keys(options).length);
+
+options.makeTest();
+
+const arr = [7, 4, 3, 6, 8, 1];
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+console.log(arr.length);
 
 
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+
+const str = prompt('', '');
+
+const products = str.split(", ");
+products.sort();
+console.log(products.join('; '));
 
 
